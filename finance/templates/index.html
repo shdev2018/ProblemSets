@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="hometabletext">
+            <tr class="firstrow">
+                <td class="user"><h4>User: {{ user }}</h4></td>
+                <td class="totalholding"><h4>Total Holding: {{ holding | usd }}</h4></td>
+            </tr>
+            <tr>
+                <td class="wallet"><h4>Wallet: {{ balance | usd }}</h4></td>
+                <td class="netvalue"><h4>Net Value: {{ netvalue | usd }}</h4></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="currentassets">
+            <tr>
+                <td><h5>Current Assets</h5></h6></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <tr>
+                <th>Ticker</th>
+                <th>Company</th>
+                <th>Current Stock Value</th>
+                <th>Shares</th>
+                <th>Holding</th>
+            </tr>
+            {% if holding > 0 %}
+                {% for key, value in stockinfo.items() %}
+                    <tr>
+                        <td class="col1">
+                            <form method="post" action="/buy" class="inline">
+                                <button type="submit" name="ticker" value="{{ key }}" class="link-button">
+                                {{ key }}
+                                </button>
+                            </form>
+                        </td>
+                        <td class="col2">{{ value[0] }}</td>
+                        <td class="col3">{{ value[1] | usd }}</td>
+                        <td class="col4">{{ value[2] }}</td>
+                        <td class="col5">{{ value[3] | usd }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </table>
+    </div>
+{% endblock %}

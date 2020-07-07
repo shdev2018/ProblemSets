@@ -1,0 +1,464 @@
+body {
+    background: -webkit-linear-gradient(left, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 50%, rgba(245,245,245,1) 100%);
+}
+main {
+    text-align: center;
+}
+/* TITLE BANNER */
+#titleBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60;
+    margin-top: 20px;
+}
+.titleFont {
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    color: #000000;
+}
+.titleBlock {
+    display: inline-block;
+    float: left;
+}
+#banner1 {
+    text-align: right;
+}
+#banner2 {
+    text-align: right;
+    margin-right: -10px;
+    margin-top: -8px;
+    margin-left: 4px;
+}
+#banner3 {
+    text-align: left;
+}
+
+/* CUSTOM MENU */
+#menuGrid {
+    display: grid;
+    height: 130px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menuLine {
+    grid-column: 1 / span 4;
+    border-bottom: 1px solid black;
+}
+#menuLine1 {
+    grid-row: 1 / span 1;
+}
+#menuLine2 {
+    grid-row: 2 / span 1;
+}
+#menuLine3 {
+    grid-row: 3 / span 1;
+}
+#menuLine4 {
+    grid-row: 4 / span 1;
+}
+#menuLine5 {
+    grid-row: 5 / span 1;
+}
+#menuLine6 {
+    grid-row: 6 / span 1;
+    border-bottom: none;
+}
+.menuOptionWrap {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-left: 37.5%;
+}
+.menuOptionWrapUp {
+    margin-top: -60px;
+}
+.menuOptionWrapDown {
+    margin-bottom: -60px;
+}
+#menuOptionWrap1 {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+#menuOptionWrap2 {
+    grid-area: 3 / 2 / span 2 / span 1;
+}
+#menuOptionWrap3 {
+    grid-area: 4 / 3 / span 2 / span 1;
+}
+#menuOptionWrap4 {
+    grid-area: 2 / 4 / span 2 / span 1;
+}
+.menuOptionStem {
+    position: absolute;
+    width: 8px;
+    height: 82px;
+}
+.menuOptionWrapUp .menuOptionStem {
+    right: 0;
+    top: 0;
+    border-right: 4px solid black;
+}
+.menuOptionWrapDown .menuOptionStem {
+    left: 0;
+    bottom: 0;
+    border-left: 4px solid black;
+}
+.menuOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 4px solid black;
+    width: 100%;
+    height: 44px;
+    border-radius: 50%;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Palatino";
+    font-weight: bold;
+    font-size: 1.6vw;
+    font-style: italic;
+    left: 0;
+}
+.menuOption:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+}
+.menuOptionWrapUp .menuOption {
+    bottom: 0;
+}
+.menuOptionWrapDown .menuOption {
+    top: 0;
+}
+/* SUB-PAGE TITLE */
+#subPageTitle {
+    display: inline-block;
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: #000000;
+    border-bottom: 3px black solid;
+    height: 54px;
+}
+
+/* UNIVERSAL PAGE CONTENT */
+.pageGrid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CROSS PAGE */
+.sectionTitle {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+.bodyText {
+    border-radius: 10px;
+    background-color: rgba(157,157,157, 0.4);
+    font-family: 'Kreon', serif;
+    color: #000000;
+    padding: 10px;
+    font-size: 1.4vw;
+    overflow: hidden;
+}
+.pic {
+    grid-row: 6 / span 1;
+}
+.instrumentCaption {
+    grid-row: 7 / span 1;
+    font-family: 'Kreon', serif;
+    font-size: 23px;
+    position: absolute;
+    margin-bottom: 10;
+    left: 0;
+    right: 0;
+}
+.imgWrap {
+    height: 86%;
+    width: 90%;
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#contact p {
+    font-family: 'Kreon', serif;
+    color: #000000;
+}
+
+/* HOME PAGE CONTENT */
+#homePageGrid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.3fr 1.19fr 0.3fr 0.2fr 1.5fr 0.25fr 0.7fr 0.3fr 0.4fr 0.9fr 0.71fr;
+  height: 1490px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#mainBioPic .imgWrap {
+    height: 100%;
+}
+#map .imgWrap{
+	height: calc(100% - 10px);
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+#aboutMeTitle {
+	grid-area: 2 / 4 / span 1 / -1;
+}
+#mainBioPic {
+	grid-area: 2 / 1 / span 2 / span 3;
+}
+#mainBio {
+	grid-area: 3 / 4 / span 1 / -1;
+}
+#instrumentsTitle {
+	grid-area: 5 / 1 / span 1 / -1;
+}
+#acousticPic {
+	grid-column: 1 / span 2;
+}
+#electricPic {
+	grid-column: 3 / span 2;
+}
+#bassPic {
+	grid-column: 5 / span 2;
+}
+#mandolinPic {
+	grid-column: 7 / span 2;
+}
+#banjoPic {
+	grid-column: 9 / span 2;
+}
+#ukulelePic {
+	grid-column: 11 / span 2;
+}
+#acousticCaption {
+	grid-column: 1 / span 2;
+}
+#electricCaption {
+	grid-column: 3 / span 2;
+}
+#bassCaption {
+	grid-column: 5 / span 2;
+}
+#mandolinCaption {
+	grid-column: 7 / span 2;
+}
+#banjoCaption {
+	grid-column: 9 / span 2;
+}
+#ukuleleCaption {
+	grid-column: 11 / span 2;
+}
+#instrumentInfo {
+	grid-area: 8 / 1 / span 1 / -1;
+}
+#locationTitle {
+	grid-area: 10 / 1 / span 1 / span 7;
+}
+#locationInfo {
+	grid-area: 11 / 1 / span 1 / span 7;
+}
+#map {
+	grid-area: 10 / 8 / -2 / -1;
+}
+
+/* TUITION PAGE CONTENT */
+#tuitionPageGrid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.3fr 1.49fr 0.3fr 0.4fr 1.1fr 0.51fr;
+  height: 750px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#mainTuitionPic .imgWrap {
+    height: 85%;
+    margin-top: 9%;
+}
+#pmaLogo .imgWrap{
+	height: calc(100% - 10px);
+	width: 100%;
+	margin-right: 20px;
+	margin-top: 10px;
+
+}
+#experienceTitle {
+	grid-area: 2 / 1 / span 1 / span 7;
+}
+#tuitionBio {
+	grid-area: 3 / 1 / span 1 / span 7;
+}
+#mainTuitionPic {
+	grid-area: 2 / 8 / span 2 / -1;
+}
+#pmaTitle {
+	grid-area: 5 / 5 / span 1 / -1;
+}
+#pmaInfo {
+	grid-area: 6 / 5 / span 1 / -1;
+}
+#pmaLogo {
+	grid-area: 5 / 1 / -2 / span 4;
+}
+
+/* STUDIO PAGE CONTENT */
+#studioPageGrid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.3fr 1.49fr 0.3fr 0.4fr 1.2fr 0.41fr;
+  height: 750px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#mainStudioPic .imgWrap {
+    height: 85%;
+    width: 105%;
+    margin-top: 11%;
+    margin-left: 10%;
+}
+#creditsLogo .imgWrap{
+	height: calc(100% - 10px);
+	width: 100%;
+	margin-right: 20px;
+	margin-top: 10px;
+
+}
+#studioTitle {
+	grid-area: 2 / 1 / span 1 / span 8;
+}
+#studioBio {
+	grid-area: 3 / 1 / span 1 / span 8;
+}
+#mainStudioPic {
+	grid-area: 2 / 9 / span 2 / -1;
+}
+#creditsTitle {
+	grid-area: 5 / 5 / span 1 / -1;
+}
+#creditsInfo {
+	grid-area: 6 / 5 / span 1 / -1;
+	display: block;
+}
+#creditsInfo div {
+    display: flex;
+    justify-content: center;
+}
+#creditsInfo ul {
+    text-align: left;
+}
+#musicPlayer {
+	grid-area: 5 / 1 / -2 / span 4;
+}
+
+/* TUITION PAGE CONTENT */
+#tuitionPageGrid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.3fr 1.49fr 0.3fr 0.4fr 1.1fr 0.51fr;
+  height: 750px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#mainTuitionPic .imgWrap {
+    height: 85%;
+    margin-top: 10%;
+}
+#pmaLogo .imgWrap{
+	height: calc(100% - 10px);
+	width: 100%;
+	margin-right: 20px;
+	margin-top: 10px;
+
+}
+#experienceTitle {
+	grid-area: 2 / 1 / span 1 / span 7;
+}
+#tuitionBio {
+	grid-area: 3 / 1 / span 1 / span 7;
+}
+#mainTuitionPic {
+	grid-area: 2 / 8 / span 2 / -1;
+}
+#pmaTitle {
+	grid-area: 5 / 5 / span 1 / -1;
+}
+#pmaInfo {
+	grid-area: 6 / 5 / span 1 / -1;
+}
+#pmaLogo {
+	grid-area: 5 / 1 / -2 / span 4;
+}
+
+/* LIVE PAGE CONTENT */
+#livePageGrid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.3fr 1.19fr 0.1fr 0.2fr 1fr 0.4fr 0.6fr 0.6fr 0.6fr 0.6fr 0.26fr;
+  height: 1490px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.bandContainer {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 30px;
+    grid-column: 1 / -1;
+}
+#livePic .imgWrap{
+	height: 100%;
+	width: 95%;
+	margin-left: 5%;
+}
+#videoPlayer {
+	grid-area: 2 / 1 / span 2 / -1;
+}
+#liveTitle {
+	grid-area: 5 / 1 / span 1 / span 9;
+}
+#liveInfo {
+	grid-area: 6 / 1 / span 1 / span 9;
+}
+#livePic {
+	grid-area: 5 / 10 / span 2 / -1;
+}
+#liveServicesTitle {
+    grid-area: 7 / 1 / span 1 / -1;
+    margin-top: 30px;
+}
+#liveServices {
+    grid-area: 8 / 1 / -2 / -1;
+}
+#bandContainer1 {
+    grid-row: 8 / span 1;
+}
+#bandContainer2 {
+    grid-row: 9 / span 1;
+}
+#bandContainer3 {
+    grid-row: 10 / span 1;
+}
+#bandContainer4 {
+    grid-row: 11 / span 1;
+}
+.bandContainer div {
+    display: inline-block;
+    font-family: 'Kreon', serif;
+    color: #000000;
+}

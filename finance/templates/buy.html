@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class="form-group">
+            {% if not ticker %}
+                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock Ticker" type="text"/>
+            {% else %}
+                <input autocomplete="off" class="form-control" name="symbol" value="{{ ticker }}" type="text"/>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Number of shares" type="text"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Purchase!</button>
+    </form>
+{% endblock %}

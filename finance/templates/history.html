@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="historytabletext">
+            <tr>
+                <td><h4>User: {{ user }}</h4></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="currentassets">
+            <tr>
+                <td><h5>Transaction History</h5></h6></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <tr>
+                <th>Exchange</th>
+                <th>Stock</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+            {% for value in history %}
+                <tr>
+                    <td class="cola">{{ value[1] }}</td>
+                    <td class="cola">{{ value[2] }}</td>
+                    <td class="colb">{{ value[3] }}</td>
+                    <td class="colb">{{ value[4] | usd }}</td>
+                    <td class="colb">{{ value[5] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,165 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll as needed */
+    overflow: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+.hometabletext
+{
+    width: 100%;
+    height: 150px;
+}
+
+.currentassets
+{
+    width:100%;
+    height:75px;
+    vertical-align:bottom;
+    text-align: center;
+}
+
+.firstrow
+{
+    height:75px;
+}
+
+.user
+{
+    width:50%;
+    text-align: left;
+}
+
+.wallet
+{
+    width:50%;
+    text-align: left;
+}
+
+.totalholding
+{
+    width:50%;
+    text-align: right;
+}
+
+.netvalue
+{
+    width:50%;
+    text-align: right;
+}
+
+.col1
+{
+    width:10%;
+    vertical-align:top;
+    text-align: left;
+}
+
+.col2
+{
+    width:35%;
+    vertical-align:top;
+    text-align: left;
+}
+
+.col3
+{
+    width:20%;
+    vertical-align:top;
+    text-align: center;
+}
+
+.col4
+{
+    width:15%;
+    vertical-align:top;
+    text-align: center;
+}
+
+.col5
+{
+    width:20%;
+    vertical-align:top;
+    text-align: center;
+}
+
+.cola
+{
+    width:20%;
+    vertical-align:top;
+    text-align: left;
+}
+
+.colb
+{
+    width:20%;
+    vertical-align:top;
+    text-align: center;
+}
+
+
+.inline
+{
+  display: inline;
+}
+
+.link-button
+{
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.link-button:focus
+{
+  outline: none;
+}
+
+.link-button:active
+{
+  color:red;
+}
